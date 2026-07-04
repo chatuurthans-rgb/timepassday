@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#5B4BFF,#7C3AED);
+    color:#fff;
+    padding:30px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.header-left h1{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.header-left p{
+    opacity:.9;
+}
+
+.header-right{
+    background:rgba(255,255,255,.15);
+    padding:15px 25px;
+    border-radius:12px;
+    font-size:18px;
+}
+
+/* Container */
+
+.container{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:40px auto;
+
+}
+
+/* Card */
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    color:#5B4BFF;
+
+    margin-bottom:20px;
+
+}
+
+/* Label */
+
+label{
+
+    display:block;
+
+    margin:15px 0 8px;
+
+    font-weight:600;
+
+}
+
+/* Textarea */
+
+textarea{
+
+    width:100%;
+
+    height:180px;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    resize:none;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+textarea:focus{
+
+    border-color:#5B4BFF;
+
+}
+
+/* Input */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+input:focus{
+
+    border-color:#5B4BFF;
+
+}
+
+/* Buttons */
+
+button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#5B4BFF,#7C3AED);
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(91,75,255,.35);
+
+}
+
+/* Search */
+
+.search-form{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.search-form input{
+
+    flex:1;
+
+}
+
+.search-form button{
+
+    width:180px;
+
+    margin-top:0;
+
+}
+
+/* Notes */
+
+.note-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+    margin-top:15px;
+
+    border-left:5px solid #5B4BFF;
+
+    background:#fafafa;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.note-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.note-card p{
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+.note-card small{
+
+    color:#777;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:20px;
+
+padding:25px;
+
+}
+
+.search-form{
+
+flex-direction:column;
+
+}
+
+.search-form button{
+
+width:100%;
+
+}
+
+.container{
+
+width:95%;
+
+}
+
+}
